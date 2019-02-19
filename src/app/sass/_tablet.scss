@@ -1,0 +1,14 @@
+@media only screen and (min-width: 45em) {
+    .row {
+        display: block;
+        clear: both;
+    }
+    .column {
+        padding: 0 1%;
+    }
+
+    @for $i from 1 through 12 {
+        $w: ($i/12)*100%;
+        .medium-#{$i} { width: $w; float: left; }
+    }
+}

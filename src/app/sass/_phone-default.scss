@@ -1,0 +1,12 @@
+.row {
+    display: block;
+    clear: both;
+}
+.column {
+    padding: 0 1%;
+}
+
+@for $i from 1 through 12 {
+    $w: ($i/12)*100%;
+    .small-#{$i} { width: $w; float: left; }
+}
