@@ -361,6 +361,7 @@ header nav ul li a {
   .card-size {
     width: 95%;
     padding: 0 0.5em;
+    text-align: left;
   }
 
   .footer {
@@ -557,6 +558,7 @@ header nav ul li a {
   .card-size {
     width: 95%;
     padding: 0 0.5em;
+    text-align: left;
   }
 
   .footer {
