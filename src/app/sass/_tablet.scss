@@ -5,21 +5,23 @@
         max-width: 100%;
         margin: auto;
     }
-    header nav {
-        margin-bottom: 10px;
-    }
-    header nav ul {
-        list-style: none;
-        overflow: hidden;
-    }
-    header nav ul li {
-        float: right;
-    }
-    header nav ul li a {
-        display: block;
-        padding: 20px;
-        text-decoration: none;
-        color: $black;
+    header {
+        nav {
+            margin-bottom: 10px;
+            ul {
+                list-style: none;
+                overflow: hidden;
+                li {
+                    float: right;
+                    a {
+                        display: block;
+                        padding: 20px;
+                        text-decoration: none;
+                        color: $black;
+                    }
+                }
+            }
+        }
     }
     #title {
         float: left;
@@ -48,6 +50,12 @@
     }
     //END MAIN CONTENT
     //SEARCH
+    @mixin styleSearch {
+        float: right;
+        color: $blue;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
     .color-search {
         background-color: $gainsboro;
         width: 100%;
@@ -58,32 +66,29 @@
         padding-top: 0.5em;
         div {
             input {
-                float: right;
-                color: $blue;
-                padding-left: 1%;
-                padding-right: 1%;
+                @include styleSearch;
                 border: 0.2em solid $black;
                 border-radius: 25px;
             }
             a {
-                float: right;
-                color: $blue;
-                padding-left: 1%;
-                padding-right: 1%;
+                @include styleSearch;
             }
         }
     }
     //END SEARCH
-    //GALLERY
-    .color-div {
+    @mixin styleColor($w, $h) {
         background-color: $gray;
+        width: $w;
         border-style: solid;
-        margin: 0 0.2em;
-        height: 18em;
+        height: $h;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 99%;
+    }
+    //GALLERY
+    .color-div {
+        @include styleColor(99%, 18em);
+        margin: 0 0.2em;
     }
     //END GALLERY
     //HEADLINE
@@ -91,13 +96,7 @@
         padding: 0 1%;
     }
     .color-card {
-        background-color: $gray;
-        border-style: solid;
-        height: 10em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
+        @include styleColor(100%, 10em);
     }
     .card-size {
         width: 95%;

@@ -16,16 +16,13 @@ body {
 header nav {
   margin-bottom: 10px;
 }
-
 header nav ul {
   list-style: none;
   overflow: hidden;
 }
-
 header nav ul li {
   float: right;
 }
-
 header nav ul li a {
   display: block;
   padding: 20px;
@@ -138,13 +135,13 @@ header nav ul li a {
 
 .color-div {
   background-color: gray;
+  width: 96%;
   border-style: solid;
-  margin: 0 0.3em;
   height: 18em;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 96%;
+  margin: 0 0.3em;
 }
 
 .text-align {
@@ -153,12 +150,12 @@ header nav ul li a {
 
 .color-card {
   background-color: gray;
+  width: 100%;
   border-style: solid;
   height: 10em;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 
 .card-size {
@@ -213,16 +210,13 @@ header nav ul li a {
   header nav {
     margin-bottom: 10px;
   }
-
   header nav ul {
     list-style: none;
     overflow: hidden;
   }
-
   header nav ul li {
     float: right;
   }
-
   header nav ul li a {
     display: block;
     padding: 20px;
@@ -335,13 +329,13 @@ header nav ul li a {
 
   .color-div {
     background-color: gray;
+    width: 99%;
     border-style: solid;
-    margin: 0 0.2em;
     height: 18em;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 99%;
+    margin: 0 0.2em;
   }
 
   .text-align {
@@ -350,12 +344,12 @@ header nav ul li a {
 
   .color-card {
     background-color: gray;
+    width: 100%;
     border-style: solid;
     height: 10em;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
   }
 
   .card-size {
@@ -410,16 +404,13 @@ header nav ul li a {
   header nav {
     margin-bottom: 10px;
   }
-
   header nav ul {
     list-style: none;
     overflow: hidden;
   }
-
   header nav ul li {
     float: right;
   }
-
   header nav ul li a {
     display: block;
     padding: 20px;
@@ -532,13 +523,13 @@ header nav ul li a {
 
   .color-div {
     background-color: gray;
+    width: 99%;
     border-style: solid;
-    margin: 0 0.2em;
     height: 18em;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 99%;
+    margin: 0 0.2em;
   }
 
   .text-align {
@@ -547,12 +538,12 @@ header nav ul li a {
 
   .color-card {
     background-color: gray;
+    width: 100%;
     border-style: solid;
     height: 10em;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
   }
 
   .card-size {
@@ -573,6 +564,7 @@ header nav ul li a {
     width: 33%;
     padding-left: 1%;
     overflow: hidden;
+    text-align: left;
   }
   .section a {
     color: blue;

@@ -5,24 +5,23 @@
     margin: auto;
 }
 
-header nav {
-    margin-bottom: 10px;
-}
-
-header nav ul {
-    list-style: none;
-    overflow: hidden;
-}
-
-header nav ul li {
-    float: right;
-}
-
-header nav ul li a {
-    display: block;
-    padding: 20px;
-    text-decoration: none;
-    color: $black;
+header {
+    nav {
+        margin-bottom: 10px;
+        ul {
+            list-style: none;
+            overflow: hidden;
+            li {
+                float: right;
+                a {
+                    display: block;
+                    padding: 20px;
+                    text-decoration: none;
+                    color: $black;
+                }
+            }
+        }
+    }
 }
 
 #title {
@@ -57,6 +56,12 @@ header nav ul li a {
 
 //END MAIN CONTENT
 //SEARCH
+@mixin styleSearch {
+    float: right;
+    color: $blue;
+    padding-left: 1%;
+    padding-right: 1%;
+}
 .color-search {
     background-color: $gainsboro;
     width: 100%;
@@ -67,33 +72,30 @@ header nav ul li a {
     padding-top: 0.5em;
     div {
         input {
-            float: right;
-            color: $blue;
-            padding-left: 1%;
-            padding-right: 1%;
+            @include styleSearch;
             border: 0.2em solid $black;
             border-radius: 25px;
         }
         a {
-            float: right;
-            color: $blue;
-            padding-left: 1%;
-            padding-right: 1%;
+            @include styleSearch;
         }
     }
 }
 
 //END SEARCH
-//GALLERY
-.color-div {
+@mixin styleColor($w, $h) {
     background-color: $gray;
+    width: $w;
     border-style: solid;
-    margin: 0 0.3em;
-    height: 18em;
+    height: $h;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 96%;
+}
+//GALLERY
+.color-div {
+    @include styleColor(96%, 18em);
+    margin: 0 0.3em;
 }
 
 //END GALLERY
@@ -103,13 +105,7 @@ header nav ul li a {
 }
 
 .color-card {
-    background-color: $gray;
-    border-style: solid;
-    height: 10em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    @include styleColor(100%, 10em);
 }
 
 .card-size {
