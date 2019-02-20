@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="myApp">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +11,16 @@
     <link rel="stylesheet" href="app.css">
     <title>Demo AngularJS</title>
 </head>
-<body>
-    <search-component></search-component>
-    <header-component></header-component>
-    <gallery-component></gallery-component>
-    <headline-component></headline-component>
-    <announcement-component></announcement-component>
-    <footer-component></footer-component>
 
+<body>
+    <div class="container">
+        <search-component></search-component>
+        <header-component></header-component>
+        <gallery-component></gallery-component>
+        <headline-component></headline-component>
+        <announcement-component></announcement-component>
+        <footer-component></footer-component>
+    </div>
     <script src="app.js"></script>
     <script src="search/search.component.js"></script>
     <script src="header/header.component.js"></script>
@@ -26,4 +29,5 @@
     <script src="announcement/announcement.component.js"></script>
     <script src="footer/footer.component.js"></script>
     <script src="card/card.component.js"></script>
+
 </html>
