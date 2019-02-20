@@ -1,12 +1,161 @@
+//HEADER
+.container-header {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+
+header nav {
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+header nav ul li {
+    float: right;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: $black;
+}
+
+#title {
+    float: left;
+}
+
+//END HEADER
+//GRID FOR MAIN CONTENT
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+
 .row {
     display: block;
-    clear: both;
+    padding: 0.2em 0;
+    //clear: both;
 }
+
 .column {
-    padding: 0 1%;
+    padding: 0;
 }
 
 @for $i from 1 through 12 {
     $w: ($i/12)*100%;
-    .small-#{$i} { width: $w; float: left; }
+    .small-#{$i} {
+        width: $w;
+        float: left;
+    }
 }
+
+//END MAIN CONTENT
+//SEARCH
+.color-search {
+    background-color: $gainsboro;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    div {
+        input {
+            float: right;
+            color: $blue;
+            padding-left: 1%;
+            padding-right: 1%;
+            border: 0.2em solid $black;
+            border-radius: 25px;
+        }
+        a {
+            float: right;
+            color: $blue;
+            padding-left: 1%;
+            padding-right: 1%;
+        }
+    }
+}
+
+//END SEARCH
+//GALLERY
+.color-div {
+    background-color: $gray;
+    border-style: solid;
+    margin: 0 0.3em;
+    height: 18em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96%;
+}
+
+//END GALLERY
+//HEADLINE
+.text-align {
+    padding: 0 1%;
+}
+
+.color-card {
+    background-color: $gray;
+    border-style: solid;
+    height: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card-size {
+    width: 95%;
+    padding: 0 0.5em;
+    text-align: center;
+}
+
+//END HEADLINE
+//ANNOUNCEMENT
+.footer {
+    display: block;
+    padding: 0.2em 0;
+}
+
+.section {
+    background-color: $gainsboro;
+    padding: 0;
+    width: 100%;
+    float: left;
+    text-align: center;
+    a {
+        color: $blue;
+        display: block;
+        text-decoration: none;
+        padding-top: 2%;
+    }
+    div {
+        width: 95%;
+        margin: auto;
+    }
+}
+
+.section-center {
+    background-color: $gainsboro;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+//END ANNOUNCEMENT
+//FOOTER
+.center {
+    text-align: center;
+    height: 3.5em;
+    padding-bottom: 1.5em;
+}
+
+//END FOOTER

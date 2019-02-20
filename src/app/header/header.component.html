@@ -1,10 +1,12 @@
-<div class="row">
-    <div id="header">
-        <ul class="nav">
-            <h3>{{ $ctrl.title }}</h3>
-            <li ng-repeat="item in $ctrl.menu">
-                <a href="javascript:void(0)">{{ item }}</a>
-            </li>
-        </ul>
+<header>
+    <div class="container-header">
+        <nav class="menu">
+            <ul>
+                <li id="title">
+                    <h3>{{ $ctrl.title }}</h3>
+                </li>
+                <li ng-repeat="item in $ctrl.menu"><a href="javascript:void(0)">{{ item }}</a></li>
+            </ul>
+        </nav>
     </div>
-</div>
+</header>

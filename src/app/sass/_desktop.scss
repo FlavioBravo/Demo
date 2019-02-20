@@ -1,20 +1,43 @@
 @media only screen and (min-width: 64.25em) {
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .container {
-        width: 98%;
+    //HEADER
+    .container-header {
+        width: 100%;
         max-width: 100%;
+        margin: auto;
+    }
+    header nav {
+        margin-bottom: 10px;
+    }
+    header nav ul {
+        list-style: none;
+        overflow: hidden;
+    }
+    header nav ul li {
+        float: right;
+    }
+    header nav ul li a {
+        display: block;
+        padding: 20px;
+        text-decoration: none;
+        color: $black;
+    }
+    #title {
+        float: left;
+    }
+    //END HEADER
+    //GRID FOR MAIN CONTENT
+    .container {
+        width: 100%;
+        max-width: 100%;
+        margin: auto;
     }
     .row {
         display: block;
         padding: 0.2em 0;
-        clear: both;
+        //clear: both;
     }
     .column {
-        padding: 0.2%;
+        padding: 0;
     }
     @for $i from 1 through 12 {
         $w: ($i/12)*100%;
@@ -23,74 +46,67 @@
             width: $w;
         }
     }
-    #header {
-        margin: auto;
-        width: 100%;
-    }
-    ul,
-    ol {
-        list-style: none;
-    }
-    .nav {
-        padding: auto;
-        margin: 0;
-    }
-    .nav h3 {
-        //text-decoration: none;
-        padding: 0;
-        padding-bottom: 0.1em;
-        display: block;
-        float: left;
-    }
-    .nav>li {
-        float: right;
-    }
-    .nav li a {
-        //background-color:#000;
-        color: black;
-        text-decoration: none;
-        padding: 10px 12px;
-        display: block;
-    }
-    .slider {
-        position: relative;
-        width: 40%;
-    }
+    //END MAIN CONTENT
+    //SEARCH
     .color-search {
-        background-color: gainsboro;
+        background-color: $gainsboro;
         width: 100%;
         max-width: 100%;
         margin: auto;
         display: flex;
-        input,
-        a {
-            display: inline-block;
-            float: right;
-            color: blue;
-            padding-left: 1%;
-            padding-right: 1%;
+        padding-bottom: 0.5em;
+        padding-top: 0.5em;
+        div {
+            input {
+                float: right;
+                color: $blue;
+                padding-left: 1%;
+                padding-right: 1%;
+                border: 0.2em solid $black;
+                border-radius: 25px;
+            }
+            a {
+                float: right;
+                color: $blue;
+                padding-left: 1%;
+                padding-right: 1%;
+            }
         }
     }
+    //END SEARCH
+    //GALLERY
     .color-div {
-        background-color: gray;
+        background-color: $gray;
         border-style: solid;
-        margin: 0 0.5em;
+        margin: 0 0.2em;
         height: 18em;
         display: flex;
         justify-content: center;
         align-items: center;
-        max-width: 100%;
+        width: 99%;
+    }
+    //END GALLERY
+    //HEADLINE
+    .text-align {
+        padding: 0 1%;
     }
     .color-card {
-        background-color: gray;
+        background-color: $gray;
         border-style: solid;
         height: 10em;
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
+    .card-size {
+        width: 95%;
+        padding: 0 0.5em;
+    }
+    //END HEADLINE
+    //ANNOUNCEMENT
     .footer {
-        background-color: gainsboro;
+        background-color: $gainsboro;
         width: 100%;
         margin: 0 auto;
         display: flex;
@@ -99,8 +115,9 @@
         float: left;
         width: 33%;
         padding-left: 1%;
+        overflow: hidden;
         a {
-            color: blue;
+            color: $blue;
             display: block;
             text-decoration: none;
             padding-top: 2%;
@@ -115,9 +132,12 @@
         width: 33%;
         text-align: left;
     }
+    //END ANNOUNCEMENT
+    //FOOTER
     .center {
         text-align: center;
         height: 3.5em;
-        padding-bottom: 2em;
+        padding-bottom: 1.5em;
     }
+    //END FOOTER
 }

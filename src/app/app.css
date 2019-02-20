@@ -1,10 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container-header {
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+}
+
+header nav {
+  margin-bottom: 10px;
+}
+
+header nav ul {
+  list-style: none;
+  overflow: hidden;
+}
+
+header nav ul li {
+  float: right;
+}
+
+header nav ul li a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+#title {
+  float: left;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+}
+
 .row {
   display: block;
-  clear: both;
+  padding: 0.2em 0;
 }
 
 .column {
-  padding: 0 1%;
+  padding: 0;
 }
 
 .small-1 {
@@ -67,14 +112,141 @@
   float: left;
 }
 
+.color-search {
+  background-color: gainsboro;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+}
+.color-search div input {
+  float: right;
+  color: blue;
+  padding-left: 1%;
+  padding-right: 1%;
+  border: 0.2em solid black;
+  border-radius: 25px;
+}
+.color-search div a {
+  float: right;
+  color: blue;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.color-div {
+  background-color: gray;
+  border-style: solid;
+  margin: 0 0.3em;
+  height: 18em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96%;
+}
+
+.text-align {
+  padding: 0 1%;
+}
+
+.color-card {
+  background-color: gray;
+  border-style: solid;
+  height: 10em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card-size {
+  width: 95%;
+  padding: 0 0.5em;
+  text-align: center;
+}
+
+.footer {
+  display: block;
+  padding: 0.2em 0;
+}
+
+.section {
+  background-color: gainsboro;
+  padding: 0;
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+.section a {
+  color: blue;
+  display: block;
+  text-decoration: none;
+  padding-top: 2%;
+}
+.section div {
+  width: 95%;
+  margin: auto;
+}
+
+.section-center {
+  background-color: gainsboro;
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+  height: 3.5em;
+  padding-bottom: 1.5em;
+}
+
 @media only screen and (min-width: 45em) {
+  .container-header {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  header nav {
+    margin-bottom: 10px;
+  }
+
+  header nav ul {
+    list-style: none;
+    overflow: hidden;
+  }
+
+  header nav ul li {
+    float: right;
+  }
+
+  header nav ul li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+  }
+
+  #title {
+    float: left;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+  }
+
   .row {
     display: block;
-    clear: both;
+    padding: 0.2em 0;
   }
 
   .column {
-    padding: 0 1%;
+    padding: 0;
   }
 
   .medium-1 {
@@ -136,27 +308,141 @@
     width: 100%;
     float: left;
   }
+
+  .color-search {
+    background-color: gainsboro;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+  }
+  .color-search div input {
+    float: right;
+    color: blue;
+    padding-left: 1%;
+    padding-right: 1%;
+    border: 0.2em solid black;
+    border-radius: 25px;
+  }
+  .color-search div a {
+    float: right;
+    color: blue;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
+  .color-div {
+    background-color: gray;
+    border-style: solid;
+    margin: 0 0.2em;
+    height: 18em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99%;
+  }
+
+  .text-align {
+    padding: 0 1%;
+  }
+
+  .color-card {
+    background-color: gray;
+    border-style: solid;
+    height: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .card-size {
+    width: 95%;
+    padding: 0 0.5em;
+  }
+
+  .footer {
+    background-color: gainsboro;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .section {
+    float: left;
+    width: 33%;
+    padding-left: 1%;
+    overflow: hidden;
+  }
+  .section a {
+    color: blue;
+    display: block;
+    text-decoration: none;
+    padding-top: 2%;
+  }
+  .section div {
+    width: 95%;
+    max-height: 50%;
+  }
+
+  .section-center {
+    float: left;
+    width: 33%;
+    text-align: left;
+  }
+
+  .center {
+    text-align: center;
+    height: 3.5em;
+    padding-bottom: 1.5em;
+  }
 }
 @media only screen and (min-width: 64.25em) {
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  .container-header {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  header nav {
+    margin-bottom: 10px;
+  }
+
+  header nav ul {
+    list-style: none;
+    overflow: hidden;
+  }
+
+  header nav ul li {
+    float: right;
+  }
+
+  header nav ul li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+  }
+
+  #title {
+    float: left;
   }
 
   .container {
-    width: 98%;
+    width: 100%;
     max-width: 100%;
+    margin: auto;
   }
 
   .row {
     display: block;
     padding: 0.2em 0;
-    clear: both;
   }
 
   .column {
-    padding: 0.2%;
+    padding: 0;
   }
 
   .large-1 {
@@ -219,54 +505,24 @@
     width: 100%;
   }
 
-  #header {
-    margin: auto;
-    width: 100%;
-  }
-
-  ul,
-  ol {
-    list-style: none;
-  }
-
-  .nav {
-    padding: auto;
-    margin: 0;
-  }
-
-  .nav h3 {
-    padding: 0;
-    padding-bottom: 0.1em;
-    display: block;
-    float: left;
-  }
-
-  .nav > li {
-    float: right;
-  }
-
-  .nav li a {
-    color: black;
-    text-decoration: none;
-    padding: 10px 12px;
-    display: block;
-  }
-
-  .slider {
-    position: relative;
-    width: 40%;
-  }
-
   .color-search {
     background-color: gainsboro;
     width: 100%;
     max-width: 100%;
     margin: auto;
     display: flex;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
   }
-  .color-search input,
-  .color-search a {
-    display: inline-block;
+  .color-search div input {
+    float: right;
+    color: blue;
+    padding-left: 1%;
+    padding-right: 1%;
+    border: 0.2em solid black;
+    border-radius: 25px;
+  }
+  .color-search div a {
     float: right;
     color: blue;
     padding-left: 1%;
@@ -276,12 +532,16 @@
   .color-div {
     background-color: gray;
     border-style: solid;
-    margin: 0 0.5em;
+    margin: 0 0.2em;
     height: 18em;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
+    width: 99%;
+  }
+
+  .text-align {
+    padding: 0 1%;
   }
 
   .color-card {
@@ -291,6 +551,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+  }
+
+  .card-size {
+    width: 95%;
+    padding: 0 0.5em;
   }
 
   .footer {
@@ -304,6 +570,7 @@
     float: left;
     width: 33%;
     padding-left: 1%;
+    overflow: hidden;
   }
   .section a {
     color: blue;
@@ -325,6 +592,6 @@
   .center {
     text-align: center;
     height: 3.5em;
-    padding-bottom: 2em;
+    padding-bottom: 1.5em;
   }
 }
