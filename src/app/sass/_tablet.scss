@@ -1,0 +1,153 @@
+@media only screen and (min-width: 480px) {
+    //SEARCH
+    .color-search {
+        background-color: $gainsboro;
+        width: 100%;
+        max-width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        div {
+            padding: 10px;
+            input {
+                border: 0.2em solid $black;
+                border-radius: 25px;
+            }
+            a {
+                color: $blue;
+            }
+        }
+    }
+    //END SEARCH
+    //HEADER
+    .container-header {
+        width: 100%;
+        max-width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        padding: 5px 20px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: auto 0px;
+        div {
+            padding: 5px 10px; 
+            a {
+                text-decoration: none;
+                color: $black;
+            }
+        }
+    }
+    //END HEADER
+    //GRID FOR MAIN CONTENT
+    @for $i from 1 through 12 {
+        $w: ($i/12)*100%;
+        .medium-#{$i} {
+            width: $w;
+        }
+    }
+    .container {
+        width: 100%;
+        max-width: 100%;
+        margin: auto;
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    //END MAIN CONTENT
+    @mixin styleColor($w, $h) {
+        background-color: $gray;
+        width: $w;
+        border-style: solid;
+        height: $h;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    //GALLERY
+    .color-div {
+        @include styleColor(100%, 400px);
+        margin: 0px 4px;
+    }
+    //END GALLERY
+    //HEADLINE
+    .text-align {
+        display: flex;
+        flex-direction: column;
+        h3 {
+            margin: 10px 15px;
+        }
+        p {
+            margin-top: 0px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 30px;
+        }
+        
+    }
+    .color-card {
+        @include styleColor(95%, 300px);
+        margin: 5px;
+    }
+    .card-size {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 15px;
+        p, h4 {
+            margin: 5px 10px;
+        }
+    }
+    //END HEADLINE
+    //ANNOUNCEMENT
+    .section {
+        background-color: $gainsboro;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
+        h2 {
+            margin-left: 10px;
+        }
+        p {
+            margin-left: 10px;
+            margin-top: 0px;
+        }
+        a {
+            color: $blue;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+    }
+    .color-coming {
+        @include styleColor(90%, 100px);
+        margin: 5px 10px;
+    }
+    //END ANNOUNCEMENT
+    //FOOTER
+    .row-footer {
+        width: 100%;
+        max-width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+    //END FOOTER
+}

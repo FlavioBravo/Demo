@@ -5,8 +5,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 @media only screen and (min-width: 768px) {
   .color-search {
@@ -18,19 +17,14 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-end;
-    align-items: center;
-  }
-  .color-search div {
-    padding: 10px;
-  }
-  .color-search div input {
-    border: 0.2em solid black;
-    border-radius: 25px;
-  }
-  .color-search div a {
-    color: blue;
-  }
-
+    align-items: center; }
+    .color-search div {
+      padding: 10px; }
+      .color-search div input {
+        border: 0.2em solid black;
+        border-radius: 25px; }
+      .color-search div a {
+        color: blue; }
   .container-header {
     width: 100%;
     max-width: 100%;
@@ -39,87 +33,51 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    align-items: center;
-  }
-
+    align-items: center; }
   .logo {
-    padding: 5px 20px;
-  }
-
+    padding: 5px 20px; }
   .menu {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin: auto 0px;
-  }
-  .menu div {
-    padding: 5px 10px;
-  }
-  .menu div a {
-    text-decoration: none;
-    color: black;
-  }
-
+    margin: auto 0px; }
+    .menu div {
+      padding: 5px 10px; }
+      .menu div a {
+        text-decoration: none;
+        color: black; }
   .large-1 {
-    width: 8.3333333333%;
-  }
-
+    width: 8.33333%; }
   .large-2 {
-    width: 16.6666666667%;
-  }
-
+    width: 16.66667%; }
   .large-3 {
-    width: 25%;
-  }
-
+    width: 25%; }
   .large-4 {
-    width: 33.3333333333%;
-  }
-
+    width: 33.33333%; }
   .large-5 {
-    width: 41.6666666667%;
-  }
-
+    width: 41.66667%; }
   .large-6 {
-    width: 50%;
-  }
-
+    width: 50%; }
   .large-7 {
-    width: 58.3333333333%;
-  }
-
+    width: 58.33333%; }
   .large-8 {
-    width: 66.6666666667%;
-  }
-
+    width: 66.66667%; }
   .large-9 {
-    width: 75%;
-  }
-
+    width: 75%; }
   .large-10 {
-    width: 83.3333333333%;
-  }
-
+    width: 83.33333%; }
   .large-11 {
-    width: 91.6666666667%;
-  }
-
+    width: 91.66667%; }
   .large-12 {
-    width: 100%;
-  }
-
+    width: 100%; }
   .container {
     width: 100%;
     max-width: 100%;
-    margin: auto;
-  }
-
+    margin: auto; }
   .row {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-  }
-
+    flex-wrap: nowrap; }
   .color-div {
     background-color: gray;
     width: 100%;
@@ -128,23 +86,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px 4px;
-  }
-
+    margin: 0px 4px; }
   .text-align {
     display: flex;
-    flex-direction: column;
-  }
-  .text-align h3 {
-    margin: 10px 15px;
-  }
-  .text-align p {
-    margin-top: 0px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 30px;
-  }
-
+    flex-direction: column; }
+    .text-align h3 {
+      margin: 10px 15px; }
+    .text-align p {
+      margin-top: 0px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 30px; }
   .color-card {
     background-color: gray;
     width: 95%;
@@ -153,36 +105,26 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5px 10px;
-  }
-
+    margin: 5px 10px; }
   .card-size {
     display: flex;
     flex-direction: column;
-    padding-bottom: 15px;
-  }
-  .card-size p, .card-size h4 {
-    margin: 5px 10px;
-  }
-
+    padding-bottom: 15px; }
+    .card-size p, .card-size h4 {
+      margin: 5px 10px; }
   .section {
     background-color: gainsboro;
     display: flex;
     flex-direction: column;
-    padding-bottom: 30px;
-  }
-  .section h2 {
-    padding-left: 5px;
-  }
-  .section p {
-    padding-left: 5px;
-    margin-top: 0px;
-  }
-  .section a {
-    color: blue;
-    padding: 5px;
-  }
-
+    padding-bottom: 30px; }
+    .section h2 {
+      padding-left: 5px; }
+    .section p {
+      padding-left: 5px;
+      margin-top: 0px; }
+    .section a {
+      color: blue;
+      padding: 5px; }
   .color-coming {
     background-color: gray;
     width: 97%;
@@ -191,14 +133,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5px 10px;
-  }
-
+    margin: 5px 10px; }
   .row-footer {
     display: flex;
     flex-direction: row;
     flex-flow: nowrap;
     justify-content: center;
-    height: 100px;
-  }
-}
+    height: 100px; } }

@@ -5,14 +5,11 @@
   "license": "MIT",
   "devDependencies": {
     "angular-mocks": "^1.7.5",
-    "cpx": "^1.5.0",
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2",
     "http-server": "^0.11.1",
-    "jasmine-core": "^3.3.0",
-    "karma": "^3.1.1",
-    "karma-chrome-launcher": "^2.2.0",
-    "karma-firefox-launcher": "^1.1.0",
-    "karma-jasmine": "^1.1.2",
-    "protractor": "^5.4.1"
+    "install": "^0.12.2",
+    "npm": "^6.8.0"
   },
   "scripts": {
     "start": "http-server -a localhost -p 8000 -c-1 ./src/app"
