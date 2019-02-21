@@ -1,81 +1,75 @@
-@media only screen and (min-width: 64.25em) {
-    //HEADER
-    .container-header {
-        width: 100%;
-        max-width: 100%;
-        margin: auto;
-    }
-    header {
-        nav {
-            margin-bottom: 10px;
-            ul {
-                list-style: none;
-                overflow: hidden;
-                li {
-                    float: right;
-                    a {
-                        display: block;
-                        padding: 20px;
-                        text-decoration: none;
-                        color: $black;
-                    }
-                }
-            }
-        }
-    }
-    #title {
-        float: left;
-    }
-    //END HEADER
-    //GRID FOR MAIN CONTENT
-    .container {
-        width: 100%;
-        max-width: 100%;
-        margin: auto;
-    }
-    .row {
-        display: block;
-        padding: 0.2em 0;
-        //clear: both;
-    }
-    .column {
-        padding: 0;
-    }
-    @for $i from 1 through 12 {
-        $w: ($i/12)*100%;
-        .large-#{$i} {
-            float: left;
-            width: $w;
-        }
-    }
-    //END MAIN CONTENT
+@media only screen and (min-width: 768px) {
     //SEARCH
-    @mixin styleSearch {
-        float: right;
-        color: $blue;
-        padding-left: 1%;
-        padding-right: 1%;
-    }
     .color-search {
         background-color: $gainsboro;
         width: 100%;
         max-width: 100%;
         margin: auto;
         display: flex;
-        padding-bottom: 0.5em;
-        padding-top: 0.5em;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;
         div {
+            padding: 10px;
             input {
-                @include styleSearch;
                 border: 0.2em solid $black;
                 border-radius: 25px;
             }
             a {
-                @include styleSearch;
+                color: $blue;
             }
         }
     }
     //END SEARCH
+    //HEADER
+    .container-header {
+        width: 100%;
+        max-width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        padding: 5px 20px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: auto 0px;
+        div {
+            padding: 5px 10px; 
+            a {
+                text-decoration: none;
+                color: $black;
+            }
+        }
+    }
+    //END HEADER
+    //GRID FOR MAIN CONTENT
+    @for $i from 1 through 12 {
+        $w: ($i/12)*100%;
+        .large-#{$i} {
+            width: $w;
+        }
+    }
+    .container {
+        width: 100%;
+        max-width: 100%;
+        margin: auto;
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    //END MAIN CONTENT
     @mixin styleColor($w, $h) {
         background-color: $gray;
         width: $w;
@@ -87,58 +81,68 @@
     }
     //GALLERY
     .color-div {
-        @include styleColor(99%, 18em);
-        margin: 0 0.2em;
+        @include styleColor(100%, 400px);
+        margin: 0px 4px;
     }
     //END GALLERY
     //HEADLINE
     .text-align {
-        padding: 0 1%;
+        display: flex;
+        flex-direction: column;
+        h3 {
+            margin: 10px 15px;
+        }
+        p {
+            margin-top: 0px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 30px;
+        }
+        
     }
     .color-card {
-        @include styleColor(100%, 10em);
+        @include styleColor(95%, 300px);
+        margin: 5px 10px;
     }
     .card-size {
-        width: 95%;
-        padding: 0 0.5em;
-        text-align: left;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 15px;
+        p, h4 {
+            margin: 5px 10px;
+        }
     }
     //END HEADLINE
     //ANNOUNCEMENT
-    .footer {
-        background-color: $gainsboro;
-        width: 100%;
-        margin: 0 auto;
-        display: flex;
-    }
     .section {
-        float: left;
-        width: 33%;
-        padding-left: 1%;
-        overflow: hidden;
-        text-align: left;
+        background-color: $gainsboro;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
+        h2 {
+            padding-left: 5px;
+        }
+        p {
+            padding-left: 5px;
+            margin-top: 0px;
+        }
         a {
             color: $blue;
-            display: block;
-            text-decoration: none;
-            padding-top: 2%;
-        }
-        div {
-            width: 98%;
-            max-height: 60%;
+            padding: 5px;
         }
     }
-    .section-center {
-        float: left;
-        width: 33%;
-        text-align: left;
+    .color-coming {
+        @include styleColor(97%, 150px);
+        margin: 5px 10px;
     }
     //END ANNOUNCEMENT
     //FOOTER
-    .center {
-        text-align: center;
-        height: 3.5em;
-        padding-bottom: 1.5em;
+    .row-footer {
+        display: flex;
+        flex-direction: row;
+        flex-flow: nowrap;
+        justify-content: center;
+        height: 100px;
     }
     //END FOOTER
 }
