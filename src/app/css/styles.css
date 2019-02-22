@@ -1,7 +1,6 @@
-body {
+* {
   margin: 0;
   padding: 0;
-  margin: auto;
   font-family: Arial, Helvetica, sans-serif;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -11,28 +10,27 @@ body {
   background-color: gainsboro;
   width: 100%;
   max-width: 100%;
-  margin: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-end;
   align-items: center; }
   .color-search div {
-    padding: 10px; }
+    padding: 10px 20px; }
     .color-search div input {
       border: 0.2em solid black;
-      border-radius: 25px; }
+      border-radius: 25px;
+      padding: 5px; }
     .color-search div a {
       color: blue; }
 
 .container-header {
   width: 100%;
   max-width: 100%;
-  margin: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center; }
 
 .logo {
@@ -88,7 +86,7 @@ body {
 .container {
   width: 100%;
   max-width: 100%;
-  margin: auto; }
+  padding: 0px 2px; }
 
 .row {
   display: flex;
@@ -103,7 +101,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0px 4px; }
+  margin: 0px; }
 
 .text-align {
   display: flex;
@@ -111,25 +109,28 @@ body {
   .text-align h3 {
     margin: 10px auto; }
   .text-align p {
-    margin-top: 0px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px; }
+
+.layout-card {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 10px; }
 
 .color-card {
   background-color: gray;
-  width: 95%;
+  width: 100%;
   border-style: solid;
   height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0px 8px; }
+  margin: 5px 0px; }
 
 .card-size {
   display: flex;
-  flex-direction: column;
-  padding-bottom: 15px; }
+  flex-direction: column; }
   .card-size p, .card-size h4 {
     margin: 5px auto; }
 
@@ -137,7 +138,8 @@ body {
   background-color: gainsboro;
   display: flex;
   flex-direction: column;
-  padding-bottom: 30px; }
+  padding-top: 10px;
+  padding-bottom: 10px; }
   .section h2 {
     margin-left: auto;
     margin-right: auto; }
@@ -146,64 +148,64 @@ body {
     padding-right: 5px; }
   .section a {
     color: blue;
+    margin-top: 5px;
     margin-left: auto;
     margin-right: auto; }
 
 .color-coming {
   background-color: gray;
-  width: 90%;
+  width: 99%;
   border-style: solid;
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5px 20px; }
+  margin: auto; }
 
 .row-footer {
   width: 100%;
   max-width: 100%;
-  margin: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  text-align: center; }
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 30px; }
 
 @media only screen and (min-width: 480px) {
   .color-search {
     background-color: gainsboro;
     width: 100%;
     max-width: 100%;
-    margin: auto;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center; }
     .color-search div {
-      padding: 10px; }
+      padding: 10px 20px; }
       .color-search div input {
         border: 0.2em solid black;
-        border-radius: 25px; }
+        border-radius: 25px;
+        padding: 5px; }
       .color-search div a {
         color: blue; }
   .container-header {
     width: 100%;
     max-width: 100%;
-    margin: auto;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center; }
   .logo {
-    padding: 5px 20px; }
+    padding: 20px; }
   .menu {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    margin: auto 0px; }
+    flex-wrap: wrap; }
     .menu div {
-      padding: 5px 10px; }
+      padding: 22px; }
       .menu div a {
         text-decoration: none;
         color: black; }
@@ -234,7 +236,7 @@ body {
   .container {
     width: 100%;
     max-width: 100%;
-    margin: auto; }
+    padding: 0px 2px; }
   .row {
     display: flex;
     flex-direction: row;
@@ -247,64 +249,75 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px 4px; }
+    margin: 0px; }
   .text-align {
     display: flex;
     flex-direction: column; }
     .text-align h3 {
-      margin: 10px 15px; }
+      margin: 10px; }
     .text-align p {
       margin-top: 0px;
-      margin-left: 10px;
       margin-right: 10px;
       margin-bottom: 30px; }
+  .row-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .layout-card {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 20px;
+    width: 49%; }
   .color-card {
     background-color: gray;
-    width: 95%;
+    width: 100%;
     border-style: solid;
     height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5px; }
+    margin: 5px 0px; }
   .card-size {
     display: flex;
-    flex-direction: column;
-    padding-bottom: 15px; }
+    flex-direction: column; }
     .card-size p, .card-size h4 {
-      margin: 5px 10px; }
+      margin: 5px 0px; }
   .section {
     background-color: gainsboro;
     display: flex;
     flex-direction: column;
+    padding-left: 10px;
+    padding-top: 15px;
     padding-bottom: 30px; }
     .section h2 {
-      margin-left: 10px; }
+      margin-left: 0px; }
     .section p {
-      margin-left: 10px;
-      margin-top: 0px; }
+      margin-top: 15px;
+      margin-left: 0px;
+      padding-left: 0px; }
     .section a {
       color: blue;
-      margin-left: 10px;
-      margin-top: 10px; }
+      margin-top: 10px;
+      margin-left: 0px; }
   .color-coming {
     background-color: gray;
-    width: 90%;
+    width: 100%;
     border-style: solid;
-    height: 100px;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5px 10px; }
+    margin: 5px 0px; }
   .row-footer {
     width: 100%;
     max-width: 100%;
-    margin: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    padding-top: 15px;
     padding-bottom: 30px; } }
 
 @media only screen and (min-width: 768px) {
@@ -312,37 +325,35 @@ body {
     background-color: gainsboro;
     width: 100%;
     max-width: 100%;
-    margin: auto;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center; }
     .color-search div {
-      padding: 10px; }
+      padding: 10px 20px; }
       .color-search div input {
         border: 0.2em solid black;
-        border-radius: 25px; }
+        border-radius: 25px;
+        padding: 5px; }
       .color-search div a {
         color: blue; }
   .container-header {
     width: 100%;
     max-width: 100%;
-    margin: auto;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center; }
   .logo {
-    padding: 5px 20px; }
+    padding: 20px; }
   .menu {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    margin: auto 0px; }
+    flex-wrap: wrap; }
     .menu div {
-      padding: 5px 10px; }
+      padding: 22px; }
       .menu div a {
         text-decoration: none;
         color: black; }
@@ -373,11 +384,11 @@ body {
   .container {
     width: 100%;
     max-width: 100%;
-    margin: auto; }
+    padding: 0px 2px; }
   .row {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap; }
+    flex-wrap: wrap; }
   .color-div {
     background-color: gray;
     width: 100%;
@@ -386,62 +397,73 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px 4px; }
+    margin: 0px; }
   .text-align {
     display: flex;
     flex-direction: column; }
     .text-align h3 {
-      margin: 10px 15px; }
+      margin: 10px; }
     .text-align p {
       margin-top: 0px;
-      margin-left: 10px;
       margin-right: 10px;
       margin-bottom: 30px; }
+  .row-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .layout-card {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 20px;
+    width: 24%; }
   .color-card {
     background-color: gray;
-    width: 95%;
+    width: 100%;
     border-style: solid;
     height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5px 10px; }
+    margin: 5px 0px; }
   .card-size {
     display: flex;
-    flex-direction: column;
-    padding-bottom: 15px; }
+    flex-direction: column; }
     .card-size p, .card-size h4 {
-      margin: 5px 10px; }
+      margin: 5px 0px; }
   .section {
     background-color: gainsboro;
     display: flex;
     flex-direction: column;
+    padding-left: 10px;
+    padding-top: 15px;
     padding-bottom: 30px; }
     .section h2 {
-      margin-left: 10px; }
+      margin-left: 0px; }
     .section p {
-      margin-left: 10px;
-      margin-top: 0px; }
+      margin-top: 15px;
+      margin-left: 0px;
+      padding-left: 0px; }
     .section a {
       color: blue;
-      margin-left: 10px;
-      margin-top: 10px; }
+      margin-top: 10px;
+      margin-left: 0px; }
   .color-coming {
     background-color: gray;
-    width: 97%;
+    width: 100%;
     border-style: solid;
     height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5px 10px; }
+    margin: 5px 0px; }
   .row-footer {
     width: 100%;
     max-width: 100%;
-    margin: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    padding-top: 15px;
     padding-bottom: 30px; } }
